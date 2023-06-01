@@ -10,4 +10,4 @@ elif number == 0:
 else:
     print(f"{number} is negative")
 
-print()  # Print a new line
+    print()  # Print a new line
