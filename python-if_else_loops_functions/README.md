@@ -68,9 +68,9 @@ number > 0
 
 Here, since number is greater than **0**, the condition evaluates `True`.
 
-#div-gpt-ad-Programizcom37046 {display:none; width: 728px; height: 90px; } #div-gpt-ad-Programizcom36796 {display: block;} @media(min-width: 992px) { #div-gpt-ad-Programizcom37046 {display: block;} #div-gpt-ad-Programizcom36796 {display: none;}}
 
-Ad
+
+
 
 If we change the value of variable to a negative integer. Let's say **\-5**.
 
