@@ -1,3 +1,11 @@
+## Types of Data Structures in Python
+Python has implicit support for Data Structures which enable you to store and access data. These structures are called List, Dictionary, Tuple and Set.
+
+Python allows its users to create their own Data Structures enabling them to have full control over their functionality. 
+![TreeStructure-Data-Structures-in-Python-Edureka1](https://github.com/binbashz/holbertonschool-higher_level_programming/assets/124454895/8dead563-f502-4a07-8cfb-4cacda66e70c)
+
+
+
 [**Lists:**](https://www.geeksforgeeks.org/python-list/) are just like [dynamic sized arrays](https://www.geeksforgeeks.org/how-do-dynamic-arrays-work/), declared in other languages ([vector in C++](https://www.geeksforgeeks.org/vector-in-cpp-stl/) and [ArrayList in Java](https://www.geeksforgeeks.org/arraylist-in-java/)). Lists need not be homogeneous always which makes it the most powerful tool in [Python](https://www.geeksforgeeks.org/python-programming-language/).
 
 [**Tuple:**](https://www.geeksforgeeks.org/tuples-in-python/) A Tuple is a collection of Python objects separated by commas. In some ways, a tuple is similar to a list in terms of indexing, nested objects, and repetition but a tuple is immutable, unlike lists that are mutable.
