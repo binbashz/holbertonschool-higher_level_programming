@@ -6,7 +6,7 @@
 
 [**Dictionary:**](https://www.geeksforgeeks.org/python-dictionary/) in Python is an ordered (since Py 3.7) \[unordered (Py 3.6 & prior)\] collection of data values, used to store data values like a map, which, unlike other Data Types that hold only a single value as an element, Dictionary holds **key:value** pair. Key-value is provided in the dictionary to make it more optimized.
 
-<iframe src="https://aa.geeksforgeeks.org/iframe.html?code=GFG_ABP_Incontent_728x90" style="width: 748px; height: 110px;"></iframe>
+
 
 List, Tuple, Set, and Dictionary are the data structures in python that are used to store and organize the data in an efficient manner.
 
