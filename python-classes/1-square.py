@@ -2,9 +2,7 @@
 
 class Square:
     """ protected data  members """
-    __size = 889
+    __size = None
     """ constructor """
     def __init__(self, __size):
         self.__size = size
-
-        print("Size:", self.size)
