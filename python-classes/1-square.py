@@ -6,10 +6,9 @@ class Square:
     """
     def __init__(self, size):
         """
-        method __init__ is to initialize the attributes of the object we create.
+        method __init__  to initialize the attributes of the object we create.
         """
         self.__size = size
-        
     """
      protected data  members whit double undersocer
     """
