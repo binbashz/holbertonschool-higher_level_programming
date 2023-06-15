@@ -2,14 +2,11 @@
 
 class Square:
     """
-    class Square defined (I am a comment inside a pair of three double quotes)
+    This is the Square class that defines a square.
+
+    Private instance attribute:
+        - __size: represents the size of the square
     """
+
     def __init__(self, size):
-        """
-        method __init__ is to initialize the attributes of the object we create.
-        """
         self.__size = size
-        
-    """
-     protected data  members whit double undersocer
-    """
