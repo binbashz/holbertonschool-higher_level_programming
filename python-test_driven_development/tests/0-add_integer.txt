@@ -1,0 +1,52 @@
+
+The ``add_integer`` function
+======================
+
+Using the ``add_integer`` function
+-------------------
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Functional Cases:
+----------------
+ Basic addition:
+    >>> add_integer(1, 2)
+    3
+
+ Negative number:
+    >>> add_integer(100, -2)
+    98
+
+ Only one argument:
+    >>> add_integer(2)
+    100
+
+ Float argument (conversion to integer):
+    >>> add_integer(100.3, -2)
+    98
+
+ TypeError - b is not an integer:
+    >>> add_integer(4, "School")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+ TypeError - a is not an integer:
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+Edge Cases:
+----------
+ OverflowError - Infinity as arguments:
+    >>> add_integer(float('inf'), float('inf'))
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
+
+ ValueError - NaN as arguments:
+    >>> add_integer(float('NaN'), float('NaN'))
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
