@@ -1,0 +1,51 @@
+
+The ''3-say_my_name.py'' module
+============================
+
+Using ''say_my_name''
+--------------------
+
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Functional Cases:
+----------------
+ Print full name when both first name and last name are provided:
+    >>> say_my_name("John", "Doe")
+    My name is John Doe
+
+ Print only first name when last name is not provided:
+    >>> say_my_name("John")
+    My name is John
+
+TypeError - raise exception when first name is not a string:
+    >>> say_my_name(123)
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+
+ TypeError - raise exception when last name is not a string:
+    >>> say_my_name("John", 123)
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
+
+Edge Cases:
+----------
+
+TypeError - raise exception when no arguments are provided:
+    >>> say_my_name()
+    Traceback (most recent call last):
+        ...
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+SyntaxError - raise exception when only last name is provided:
+    >>> say_my_name("White")
+    Traceback (most recent call last):
+        ...
+    SyntaxError: invalid syntax
+
+ TypeError - raise exception when more than 2 arguments are provided:
+    >>> say_my_name("John", "Smith", "White")
+    Traceback (most recent call last):
+        ...
+    TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
