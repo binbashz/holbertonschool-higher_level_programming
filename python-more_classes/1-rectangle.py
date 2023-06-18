@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 
-""" Real definition of a rectangle """
-
+"""
+Class Rectangle that defines a rectangle
+"""
 
 class Rectangle:
+    
+    
     def __init__(self, width=0, height=0):
-        self.__width = 0
-        self.__height = 0
         self.width = width
         self.height = height
 
@@ -33,11 +34,3 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
-
-my_rectangle = Rectangle(2, 4)
-print(my_rectangle.__dict__)
-
-my_rectangle.width = 10
-my_rectangle.height = 3
-print(my_rectangle.__dict__)
