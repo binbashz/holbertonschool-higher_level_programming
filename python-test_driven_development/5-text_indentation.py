@@ -1,24 +1,35 @@
 #!/usr/bin/python3
+"""
+Text indentation
+"""
+
 
 def text_indentation(text):
-    if not isinstance(text, str):
-        raise TypeError("text must be a string")
+    """
+    Prints the given text with two new lines after each '.', '?', and ':'
 
-    # Remove leading and trailing whitespace from the text
-    text = text.strip()
+    Args:
+        text (str): Input text to be processed
 
-    # Define the punctuation characters that will trigger new lines
-    punctuation = [".", "?", ":"]
+    Raises:
+        TypeError: If text is not a string
 
-    # Iterate over each character in the text
-    for char in text:
-        # Print the character without a newline
-        print(char, end="")
+    Note:
+        No space at the beginning or end of each printed line
+    """
 
-        # Check if the character is a punctuation mark
-        if char in punctuation:
-            # Print two new lines after the punctuation mark
-            print("\n\n", end="")
+    if not isinstance(text, str):  # Check if text is a string
+        raise TypeError('text must be a string')
 
-    # Print a final newline character
-    print()
+    delimiters = {'.', '?', ':'}  # Set of delimiters
+    index = 0  # Initialize index variable
+
+    while index < len(text):
+        if text[index] in delimiters:  # Check if character is a delimiter
+            print(text[index] + "\n\n", end="")  # Print delim with 2 new lines
+            index += 1
+            while index < len(text) and text[index] == " ":  # Skip consec spac
+                index += 1
+        else:
+            print(text[index], end="")  # Print character
+            index += 1
