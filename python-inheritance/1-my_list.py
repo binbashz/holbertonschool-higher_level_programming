@@ -1,13 +1,10 @@
 #!/usr/bin/python3
-
-""" task 1. My list """
-
-
-class Mylist(list):
-
-    """ prototype """
+""" Task 1. My list
+"""
 
 
-def print_sorted(self):
-    """ printing """
-    print(sorted(self))
+class MyList(list):
+    """ Print a list sorted in ascending order
+    """
+    def print_sorted(self):
+        print(sorted(self))
