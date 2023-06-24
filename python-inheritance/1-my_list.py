@@ -5,8 +5,9 @@
 
 class Mylist(list):
 
-""" prototype """
-def print_sorted(self):
-""" printing """
-    print(sorted(list(self)))
+    """ prototype """
 
+
+def print_sorted(self):
+    """ printing """
+    print(sorted(self))
