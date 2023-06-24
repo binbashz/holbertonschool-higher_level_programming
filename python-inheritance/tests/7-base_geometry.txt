@@ -1,0 +1,59 @@
+
+# Test BaseGeometry Class
+
+## Test Case 1: Testing area() method when not implemented
+- Description: The area() method should raise an exception since it is not implemented.
+- Input:
+    ```
+    bg = BaseGeometry()
+    try:
+        bg.area()
+    except Exception as e:
+        assert str(e) == "area() is not implemented"
+    ```
+- Expected Output: Exception raised with the message "area() is not implemented".
+
+## Test Case 2: Testing integer_validator() method with positive integer
+- Description: The integer_validator() method should not raise any exceptions when a positive integer is provided.
+- Input:
+    ```
+    bg = BaseGeometry()
+    bg.integer_validator("my_int", 12)
+    ```
+- Expected Output: No exceptions should be raised.
+
+## Test Case 3: Testing integer_validator() method with non-integer value
+- Description: The integer_validator() method should raise a TypeError when a non-integer value is provided.
+- Input:
+    ```
+    bg = BaseGeometry()
+    try:
+        bg.integer_validator("name", "John")
+    except TypeError as e:
+        assert str(e) == "name must be an integer"
+    ```
+- Expected Output: TypeError raised with the message "name must be an integer".
+
+## Test Case 4: Testing integer_validator() method with zero value
+- Description: The integer_validator() method should raise a ValueError when a zero value is provided.
+- Input:
+    ```
+    bg = BaseGeometry()
+    try:
+        bg.integer_validator("age", 0)
+    except ValueError as e:
+        assert str(e) == "age must be greater than 0"
+    ```
+- Expected Output: ValueError raised with the message "age must be greater than 0".
+
+## Test Case 5: Testing integer_validator() method with negative value
+- Description: The integer_validator() method should raise a ValueError when a negative value is provided.
+- Input:
+    ```
+    bg = BaseGeometry()
+    try:
+        bg.integer_validator("distance", -4)
+    except ValueError as e:
+        assert str(e) == "distance must be greater than 0"
+    ```
+- Expected Output: ValueError raised with the message "distance must be greater than 0".
