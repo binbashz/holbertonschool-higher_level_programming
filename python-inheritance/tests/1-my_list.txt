@@ -1,14 +1,17 @@
+
+ 
+
 The ''1-my_list'' module
 ============================
 
-Using the `print_sorted()` method
+Using ''print_sorted``
 --------------------
 
     >>> MyList = __import__('1-my_list').MyList
 
 Functional Cases:
 ----------------
- Case with positive integers:
+1. Only positive integers:
 
     >>> my_list = MyList()
     >>> my_list.append(1)
@@ -23,7 +26,7 @@ Functional Cases:
     >>> print(my_list)
     [1, 4, 2, 3, 5]
 
- Case with an empty list:
+2. Empty list:
 
     >>> my_list = MyList()
     >>> print(my_list)
@@ -33,7 +36,7 @@ Functional Cases:
     >>> print(my_list)
     []
 
- Case with negative integers:
+3. Only Negative integers:
 
     >>> my_list = MyList()
     >>> my_list.append(-1)
@@ -48,7 +51,7 @@ Functional Cases:
     >>> print(my_list)
     [-1, -4, -2, -3, -5]
 
- Case with a single element in the list:
+4. Only one element in the list:
 
     >>> my_list = MyList()
     >>> my_list.append(7)
@@ -62,13 +65,14 @@ Functional Cases:
 
 Edge Cases:
 ----------
- Case where a NameError occurs when calling print_sorted with arguments:
+
+5. NameError - print_sorted with arguments:
 
     >>> my_list.print_sorted(test)
     Traceback (most recent call last):
     NameError: name 'test' is not defined
 
- Case with a string appended to the list:
+6. Append a string:
 
     >>> my_list = MyList()
     >>> my_list.append('test')
